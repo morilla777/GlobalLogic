@@ -1,0 +1,44 @@
+{
+	"info": {
+		"_postman_id": "d2ecba03-6574-4722-b4a3-50077c533d33",
+		"name": "Users Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User Register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NzAxMDc3MDMsInVzZXJfbmFtZSI6InVzZXIiLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXSwianRpIjoiYmIxZmUxODItYTMzZi00ZjFmLTkyMGMtZDI0MmE0ODg3ODUxIiwiY2xpZW50X2lkIjoiY2xpZW50SWQiLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXX0.OUDh9c7Snk1Q2lX9hXz-uCdt0cPTmdYJEk2lex9NXmy5IiWkD36MZmdBdi6if6neugLXIXufqM-JGCoTjjVuJ12jfj22Z8JsFAFx7skg8P9-g094pav3Y2QMgxUzmgLNR874Et6R8UdxcYwTsSZeOltRfDifGf66zLzL4SRGk7XVHFlTqddQGApgh-2KsA-reLSDSqFlfdkVqv8nGOCE2yWVYnK6wgi6oKG-3xMIvXFKT7mtbyHAPVTKeMFePVbLLoA3X5Js7_tSZ3ZVlXj9CfHvXUxfO5bqsF3Fi3SE1IRcRVjFPCaslZmdpdoH842me7N2i_auxR-A8GnWN4dFSw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Marco Mora\",\r\n    \"email\": \"morilla777@gmail.com\",\r\n    \"password\": \"Asfdfdg23\",\r\n    \"phones\": [\r\n        {\r\n            \"number\": \"93185372\",\r\n            \"citycode\": \"9\",\r\n            \"countrycode\": \"56\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
